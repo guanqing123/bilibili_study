@@ -1,0 +1,7 @@
+name = input("请输入您的姓名：")
+year = input("请输入您的年龄：")
+motto = input("请输入您的座右铭：")
+print("-------自我介绍-------")
+print("我的姓名是：" + name)
+print("我的年龄是：" + year)
+print("我的座右铭是：" + motto)
