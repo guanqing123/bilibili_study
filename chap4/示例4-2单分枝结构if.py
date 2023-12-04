@@ -21,3 +21,17 @@ if x:  # 在Python中一切皆对象, 每个对象都有一个布尔值, 而非�
 
 if not x:  # 空字符串的布尔值为False, 取反, not False的结果为True
     print('x是一个空字符串')
+
+print('-' * 10 + '表达式也可以是一个单纯的布尔型变量' + '-' * 10)
+flag = eval(input('请输入一个布尔类型的值：True或False'))
+if flag:
+    print('flag的值为True')
+
+if not flag:
+    print('flag的值为False')
+
+print('-' * 10 + '使用if语句时,如果语句块中只有一句代码,可以将语句块直接写中冒号的后面' + '-' * 10)
+a = 10
+b = 5
+if a > b: max = a  # 语句块只有一句,赋最大值
+print('a和b的最大值为：', max)
