@@ -13,6 +13,7 @@ for i in range(1, 11):
 print('1-10之间的累加和为:', s)
 print('-' * 10 + '100到999之间的水仙花数' + '-' * 10)
 '''
+abc=c3+b3+13
 153=3*3*3+5*5*5+1*1*1
 '''
 for i in range(100, 1000):
@@ -23,13 +24,15 @@ for i in range(100, 1000):
     if a * a * a + b * b * b + c * c * c == i:
         print(i, '是水仙花数')
 
+print('-'*20)
 for i in range(100, 1000):
-    s = str(i)
-    a = int(s[0])
-    b = int(s[1])
-    c = int(s[2])
-    if a * a * a + b * b * b + c * c * c == i:
+    sd = i % 10  # 获取个位上的数字 假设 153%10 -->3
+    tens = i // 10 % 10  # 获取十位上的数字 153//10-->15 15%10-->
+    hundred = i // 100  # 获取百位上的数字 153//100-->1
+    # 判断
+    if sd**3+tens**3+hundred**3 == i:
         print(i, '是水仙花数')
+print('-'*20)
 
 for i in range(100, 1000):
     sd = i % 10  # 获取个位上的数字  假设 153%10 -->3
