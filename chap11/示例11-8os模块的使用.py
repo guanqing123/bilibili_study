@@ -15,7 +15,7 @@ print('指定路径下所有目录及文件：', os.listdir('/Users/guanqing'))
 os.chdir('/Users/guanqing/python/bilibili_study')
 print('当前的工作路径：', os.getcwd())  # 再写代码,工作路径就是：/Users/guanqing/python/bilibili_study
 
-# 遍历目录树
+# 遍历目录树,相当于递归
 for dirs, dirlst, filelst in os.walk('/Users/guanqing/python/bilibili_study/chap11'):
     print(dirs)
     print(dirlst)
