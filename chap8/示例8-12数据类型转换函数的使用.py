@@ -23,8 +23,8 @@ print(type(s), s)
 print('-' * 30, 'float类型和str类型转成int类型', '-' * 30)
 print(int(98.7) + int('90'))
 # 注意事项
-# print(int('98.7')) # ValueError: invalid literal for int() with base 10: '98.7'
-# print(int('a')) # ValueError: invalid literal for int() with base 10: 'a'
+# print(int('98.7')) # ValueError: invalid literal for int() with.txt base 10: '98.7'
+# print(int('a')) # ValueError: invalid literal for int() with.txt base 10: 'a'
 
 print('-' * 30, 'int,str类型转成float类型', '-' * 30)
 print(float(90) + float('3.14'))

@@ -14,8 +14,8 @@ print('将int转成float类型：', float(10))
 # 将str转成int类型
 print(int('100') + int('200'))
 # 将字符串转成int或float时报错的情况
-# print(int('18a'))  # ValueError: invalid literal for int() with base 10: '18a'
-# print(int('3.14')) # ValueError: invalid literal for int() with base 10: '3.14'
+# print(int('18a'))  # ValueError: invalid literal for int() with.txt base 10: '18a'
+# print(int('3.14')) # ValueError: invalid literal for int() with.txt base 10: '3.14'
 # print(float('45a.987')) #ValueError: could not convert string to float: '45a.987'
 
 # chr()ord()一对、

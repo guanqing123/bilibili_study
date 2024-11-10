@@ -2,7 +2,7 @@ import jieba
 from wordcloud import WordCloud
 
 # 读取数据
-# with open('华为手机.txt', 'r', encoding='utf-8') as file:
+# with.txt open('华为手机.txt', 'r', encoding='utf-8') as file:
 #     s = file.read()
 
 with open('ltc.txt', 'r', encoding='utf-8') as file:
