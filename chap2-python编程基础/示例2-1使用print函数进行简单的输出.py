@@ -1,3 +1,6 @@
+# print() 函数完整的语法格式
+# print(self, *args, sep=' ', end='\n', file=None)
+
 a = 100  # 变量a,值为100
 b = 50  # 变量b,值为50
 print(90)
