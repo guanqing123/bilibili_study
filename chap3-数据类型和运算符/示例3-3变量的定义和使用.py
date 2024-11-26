@@ -14,3 +14,10 @@ no = number = 1024  # no与number都指向了1024这个整数值
 print(no, number)
 print(id(no))  # id()查看对象的内存地址的
 print(id(number))
+
+# 变量命名应遵循以下几条规则
+
+# 变量名必须是一个有效的标识符
+# 变量名不能使用 Python 中的保留字
+# 慎用小写字母 l （挨）和大写字母 O
+# 应选择有意义的单词作为变量名

@@ -1,3 +1,7 @@
+# 布尔类型 用来表示“真”值或“假”值的数据类型
+# 在Python中使用标识符 True 或 False 表示布尔类型的值
+# True 表示整数 1，False 表示整数 0
+
 x = True
 print(x)
 print(type(x))  # <class 'bool'>
@@ -12,6 +16,18 @@ print(bool(''))  # False
 # 所有非空字符串的布尔值都是True
 print(bool(False))  # False
 print(bool(None))  # False
+
+print('----------------------')
+# 空字符串的布尔值是False
+print('空字符串的布尔值是:', bool(''))
+# 空元组的布尔值是False
+print('空元组的布尔值是:', bool(()))
+# 空列表的布尔值是False
+print('空列表的布尔值是:', bool([]))
+# 空字典的布尔值是False
+print('空字典的布尔值是:', bool({}))
+# 空集合的布尔值是False
+print('空集合的布尔值是:', bool(set()))
 
 '''
 布尔值为False的情况

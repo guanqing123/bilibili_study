@@ -1,3 +1,9 @@
+# int(x) 将x转换成int类型
+# float(x) 将x转换成float类型
+# str(x) 将x转换成str类型
+# chr(x) 将整数x转换成unicode字符
+# ord(x) 将unicode字符x转换成对应的整数值
+
 x = 10
 y = 3
 z = x / y  # 在执行除法运算的时候,将运算的结果赋值给z

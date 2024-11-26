@@ -1,3 +1,6 @@
+# 逻辑运算符
+# and 逻辑与, or 逻辑或, not 逻辑非
+
 print(True and True)
 print(True and False)
 print(False and True)
