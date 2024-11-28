@@ -1,3 +1,14 @@
+"""
+操作符 / 函数          描述说明
+x in s            如果 x 是 s 的元素，结果为 True ，否则结果为 False
+x not in s        如果 x 不是 s 的元素，结果为 True ，否则结果为 False
+len(s)            序列 s 中元素的个数 (即序列的长度)
+max(s)            序列 s 中元素的最大值
+min(s)            序列 s 中元素的最小值
+s.index(x)        序列 s 中第一次出现元素 x 的位置
+s.count(x)        序列 s 中出现 x 的总次数
+"""
+
 s = 'helloworld'
 print('e在helloworld中存在吗?', ('e' in s))  # in的使用
 print('v在helloworld中存在吗?', ('v' in s))
