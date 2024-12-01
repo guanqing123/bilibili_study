@@ -1,9 +1,14 @@
+"""
+2）内置函数 sorted()
+sorted(iterable,key=None,reverse=False)
+iterable: 表示的是排序的对象
+"""
 lst = [4, 56, 3, 78, 40, 56, 89]
-print('原列表:', lst)
+print('原列表:', lst, id(lst))
 # 排序
 asc_lst = sorted(lst)
-print('升序:', asc_lst)
-print('原列表:', lst)
+print('升序:', asc_lst, id(asc_lst))
+print('原列表:', lst, id(lst))
 
 # 降序
 desc_lst = sorted(lst, reverse=True)
