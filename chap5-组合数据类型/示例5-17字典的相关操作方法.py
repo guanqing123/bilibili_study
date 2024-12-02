@@ -1,13 +1,13 @@
 d = {1001: '李梅', 1002: '王华', 1003: '张峰'}
-print(d)
+print(d, id(d))
 
 # 向字典中添加元素
 d[1004] = '张丽丽'  # 直接使用赋值运算符向字典中添加元素
-print(d)
+print(d, id(d))
 
 # 获取字典中所有的key
 keys = d.keys()
-print(keys)  # dict_keys([1001, 1002, 1003, 1004])
+print(keys, type(keys))  # dict_keys([1001, 1002, 1003, 1004])
 print(list(keys))
 print(tuple(keys))
 
@@ -28,8 +28,14 @@ print(d)
 print(d.pop(1001))
 print(d)
 
+"""
+d.pop(key,default): key 存在获取相应的 value ，同时删除 key-value 对，否则获取默认值
+"""
 print(d.pop(1008, '不存在'))
 
+"""
+d.popitem(): 随机从字典中取出一个 key-value 对，结果为元组类型，同时将该key-value 从字典中删除
+"""
 # 随机删除
 print(d.popitem())
 print(d)

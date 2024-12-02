@@ -9,6 +9,7 @@
 # 1）直接使用[]创建列表
 # 语法结构：列表名 =[element1,element2,......elementN]
 lst = ['hello', 'world', 98, 100.5]
+print(lst[0:3:2])
 print('lst=', lst)
 
 # 2）使用内置的函数list()创建列表
