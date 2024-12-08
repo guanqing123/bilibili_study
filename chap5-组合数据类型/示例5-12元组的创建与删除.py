@@ -25,6 +25,9 @@ print(t)
 
 t = tuple([10, 20, 30, 40])
 print(t)
+t2 = (50, 60)
+newt = t.__add__(t2)
+print(t, t2, newt)
 
 print('10在元组中是否存在：', (10 in t))
 print('10在元组是不存在:', (10 not in t))

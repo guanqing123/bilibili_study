@@ -1,3 +1,9 @@
+"""
+字典生成式
+d={ key:value for item in range }
+d={key:value for key,value in zip(lst1,lst2)}
+"""
+
 import random
 
 d = {item: random.randint(1, 100) for item in range(4)}

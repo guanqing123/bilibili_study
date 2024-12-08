@@ -1,3 +1,11 @@
+"""
+字典的方法               描述说明
+d.keys()             获取所有的 key 数据
+d.values()           获取所有的 value 数据
+d.pop(key,default)   key 存在获取相应的 value ，同时删除 key-value 对，否则获取默认值
+d.popitem()          随机从字典中取出一个 key-value 对，结果为元组类型，同时将该 key-value 从字典中删除
+d.clear()            清空字典中所有的 key-value 对
+"""
 d = {1001: '李梅', 1002: '王华', 1003: '张峰'}
 print(d, id(d))
 

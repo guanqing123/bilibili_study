@@ -1,3 +1,11 @@
+"""
+Python3.11 新特性
+3) 同步迭代
+语法结构如下:
+match data1,data2:
+    case data1,dat2:
+        pass
+"""
 fruits = ['apple', 'orange', 'pear', 'grape']
 counts = [10, 3, 4, 5]
 for f, c in zip(fruits, counts):
