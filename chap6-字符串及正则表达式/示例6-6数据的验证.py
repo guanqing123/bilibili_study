@@ -1,3 +1,16 @@
+"""
+数据的验证
+方法名             描述说明
+str.isdigit()     所有字符都是数字 ( 阿拉伯数字 )
+str.isnumeric()   所有字符都是数字
+str.isalpha()     所有字符都是字母 ( 包含中文字符 )
+str.isalnum()     所有字符都是数字或字母（包含中文字符 )
+str.islower()     所有字符都是小写
+str.isupper()     所有字符都是大写
+str.istitle()     所有字符都是首字母大写
+str.isspace()     所有字符都是空白字符
+"""
+
 # isdigit()十进制的阿拉伯数字
 print('123'.isdigit())  # True
 print('一二三'.isdigit())  # False
