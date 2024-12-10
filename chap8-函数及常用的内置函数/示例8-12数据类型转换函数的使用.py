@@ -1,3 +1,13 @@
+"""
+函数名称            描述说明
+bool(obj)       获取指定对象 obj 的布尔值
+str(obj)        将指定对象 obj 转成字符串类型
+int(x)          将 x 转成 int 类型
+float(x)        将 x 转成 float 类型
+list(sequence)  将序列转成列表类型
+tuple(sequence) 将序列转成元组类型
+set(sequence)   将序列转成集合类型
+"""
 print('非空字符串的布尔值:', bool('hello'))  # True
 print('空字符串的布尔值:', bool(''))  # 空字符串不是空格字符串
 print('空列表的布尔值:', bool([]))

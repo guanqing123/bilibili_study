@@ -1,3 +1,13 @@
+"""
+函数名称            描述说明
+abs(x)          获取 x 的绝对值
+divmod(x,y)     获取 x 与 y 的商和余数
+max(sequence)   获取 sequence 的最大值
+min(sequence)   获取 sequence 的最小值
+sum(iter)       对可迭代对象进行求和运算
+pow(x,y)        获取 x 的 y 次幂
+round(x,d)      对 x 进行保留 d 位小数，结果四舍五入
+"""
 print('绝对值:', abs(100), abs(-100), abs(0))
 print('商和余数:', divmod(13, 4), type(divmod(13, 4)))
 print('最大值:', max('hello'))
