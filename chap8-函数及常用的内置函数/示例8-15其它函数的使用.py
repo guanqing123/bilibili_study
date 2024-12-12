@@ -1,3 +1,11 @@
+"""
+函数名称                        描述说明
+format(value,format_spec)     将 value 以 format_spec 格式进行显示
+len(s)                        获取 s 的长度或 s 元素的个数
+id(obj)                       获取对象的内存地址
+type(x)                       获取 x 的数据类型
+eval(s)                       执 s 这个字符串所表示的 Python 代码
+"""
 # format()
 print(format(3.14, '20'))  # 数值型默认右对齐
 print(format('hello', '20'))  # 字符串默认左对齐
