@@ -3,7 +3,7 @@ class Student:
         self.name = name
         self.__gender = gender  # self.__gender 是私有的实例属性
 
-    # 使用@property 修改方法, 将方法转成属性使用
+    # 使用@property 修饰方法, 将方法转成属性使用
     @property
     def gender(self):
         return self.__gender

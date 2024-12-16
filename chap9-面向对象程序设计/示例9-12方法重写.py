@@ -1,3 +1,11 @@
+"""
+方法重写：
+    子类继承了父类就拥有了父类中公有成员和受保护的成员
+    父类的方法并不能完全适合子类的需求,这个时候子类就可以重写父类的方法
+    子类在重写父类的方法时,要求方法的名称必须与父类方法的名称相同,在子类重写后的方法中可以通过super().xxx()调用父类中的方法
+"""
+
+
 class Person:  # 默认继承了object
     def __init__(self, name, age):
         self.name = name
@@ -35,7 +43,7 @@ class Doctor(Person):
 stu = Student('陈梅梅', 20, '1001')
 stu.show()
 
-print('-'*40)
+print('-' * 40)
 
 doctor = Doctor('张一一', 32, '外科')
 doctor.show()

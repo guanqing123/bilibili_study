@@ -1,3 +1,15 @@
+"""
+继承：
+    在Python中一个子类可以继承N多个父类
+    一个父类也可以拥有N多个子类
+    如果一个类没有继承任何类,那么这个类默认继承的是object类
+
+继承的语法结构：
+    class 类名(父类1,父类2...,父类N):
+        pass
+"""
+
+
 class Person:  # 默认继承了object
     def __init__(self, name, age):
         self.name = name
