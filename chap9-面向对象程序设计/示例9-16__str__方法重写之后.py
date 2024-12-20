@@ -4,7 +4,7 @@ class Person(object):
         self.age = age
 
     def __str__(self):
-        return '这是一个人类,具有name和age两个实例属性'  # 返回值是一个字符串
+        return f'这是一个人类,具有name和age两个实例属性,name:{self.name},age:{self.age}'  # 返回值是一个字符串
 
 
 # 创建Person类的对象

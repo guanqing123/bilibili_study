@@ -1,3 +1,14 @@
+"""
+特殊属性                    功能描述
+obj.__dict__            对象的属性字典
+obj.__class__           对象所属的类
+class.__bases__         类的父类元组
+class.__base__          类的父类
+class.__mro__           类的层次结构
+class._subclasses__()   类的子类列表
+"""
+
+
 class A:
     pass
 
