@@ -28,7 +28,7 @@ cursor = conn.cursor()
 
 # 执行查询 select id, uid, rank from o2o_user_change_dhs_rank where length(ifnull(uid,\'\'))>0 and length(ifnull(phone,
 # \'\'))>0 and ifnull(flg,0)=0
-cursor.execute("select id, uid, rank from o2o_user_change_dhs_rank where qs=1 and ifnull(flg, 0)=0")
+cursor.execute("select id, uid, rank from o2o_user_change_dhs_rank where qs=5 and ifnull(flg, 0)=0")
 # 使用对象列列表接收查询结果
 records = [Record(*row) for row in cursor.fetchall()]
 
