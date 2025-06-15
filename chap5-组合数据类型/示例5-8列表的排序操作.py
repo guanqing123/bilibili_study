@@ -3,7 +3,7 @@
 1）列表对象的 sort 方法
 lst.sort(key=None,reverse=False)
 key:表示排序的规则
-表示排序方式（默认升序）
+reverse:表示排序方式（默认升序）
 """
 lst = [4, 56, 3, 78, 40, 56, 89]
 print('原列表:', lst, id(lst))

@@ -9,24 +9,26 @@
 # 1）直接使用[]创建列表
 # 语法结构：列表名 =[element1,element2,......elementN]
 lst = ['hello', 'world', 98, 100.5]
-print(lst[0:3:2])
+print(lst[0:3:2])  # ['hello', 98]
 print('lst=', lst)
 
 # 2）使用内置的函数list()创建列表
 # 语法结构如下：列表名 =list( 序列 )
 lst2 = list('helloworld')
 lst3 = list(range(1, 10, 2))  # 从1开始到10结束，步长为2，不包含10
-print('lst2=', lst2)
-print('lst3=', lst3)
+print('lst2=', lst2)  # lst2= ['h', 'e', 'l', 'l', 'o', 'w', 'o', 'r', 'l', 'd']
+print('lst3=', lst3)  # lst3= [1, 3, 5, 7, 9]
 
 # 列表是序列中的一种，对序列的操作符，运算符，函数均可以使用
 print('序列中 lst + lst2 + lst3 操作:', lst + lst2 + lst3)  # 序列中的相加操作
+# ['hello', 'world', 98, 100.5, 'h', 'e', 'l', 'l', 'o', 'w', 'o', 'r', 'l', 'd', 1, 3, 5, 7, 9]
 print('序列中 lst * 3 操作:', lst * 3)  # 序列的相乘操作
-print('len(lst):', len(lst))
+# ['hello', 'world', 98, 100.5, 'hello', 'world', 98, 100.5, 'hello', 'world', 98, 100.5]
+print('len(lst):', len(lst))  # 4
 # print('max(lst):', max(lst)) TypeError: '>' not supported between instances of 'int' and 'str'
-print('max(lst2):', max(lst2))
-print('max(lst3):', max(lst3))
-print('min(lst3):', min(lst3))
+print('max(lst2):', max(lst2))  # w
+print('max(lst3):', max(lst3))  # 9
+print('min(lst3):', min(lst3))  # 1
 
 print('lst2.count(o):', lst2.count('o'))  # 统计o的个数
 print('lst2.index(o):', lst2.index('o'))  # o在列表lst2中第一次出现的位置

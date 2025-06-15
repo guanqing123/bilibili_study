@@ -12,7 +12,7 @@ s={element1,element2,......elementN}
 """
 # {}直接创建集合
 s = {10, 20, 30, 40}
-print(s)
+print(s)  # {40, 10, 20, 30}
 # 集合只能存储不可变数据类型
 # s={[10,20],[30,40]} #TypeError: unhashable type: 'list'
 # print(s)
@@ -24,26 +24,26 @@ s=set(可迭代对象)
 """
 # 使用set()创建集合
 s = set()  # 创建了一个空集合,空集合的布尔值是False
-print(s)
+print(s)  # set()
 s = {}  # 创建的是集合还是字典呢？
-print(s, type(s))  # dict
+print(s, type(s))  # {} <class 'dict'>
 
 s = set('helloworld')
-print(s)
+print(s)  # {'w', 'd', 'o', 'r', 'e', 'l', 'h'}
 
 s2 = set([10, 20, 30])
-print(s2)
+print(s2)  # {10, 20, 30}
 
 s3 = set(range(1, 10))
-print(s3)
+print(s3)  # {1, 2, 3, 4, 5, 6, 7, 8, 9}
 
 # 集合属于序列中的一种
-print('max:', max(s3))
-print('min:', min(s3))
-print('len:', len(s3))
+print('max:', max(s3))  # 9
+print('min:', min(s3))  # 1
+print('len:', len(s3))  # 9
 
-print('9在集合中存在吗？', (9 in s3))
-print('9在集合中不存在吗？', (9 not in s3))
+print('9在集合中存在吗？', (9 in s3))  # True
+print('9在集合中不存在吗？', (9 not in s3))  # False
 
 """
 集合的删除

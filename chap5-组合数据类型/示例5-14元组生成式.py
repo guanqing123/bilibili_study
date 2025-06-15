@@ -4,7 +4,7 @@
 生成器对象中的元素可以使用 __next__() 方法进行获取
 """
 t = (i for i in range(1, 4))
-print(t)
+print(t)  # 生成器对象 <generator object <genexpr> at 0x107d69600>
 # t=tuple(t)
 # print(t)
 # 遍历

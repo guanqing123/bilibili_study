@@ -9,7 +9,6 @@ number = eval(input('请输入您的6位中奖号码：'))
 # 使用if语句
 if number == 987654:  # 等值判断
     print('恭喜您,中奖了！')
-
 if number != 987654:
     print('您未中本期大奖')
 
