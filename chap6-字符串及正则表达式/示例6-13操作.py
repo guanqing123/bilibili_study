@@ -5,12 +5,12 @@ lst = ['13809876543', '15109876543', '13278965439', '15912345665', '13198765432'
 for item in lst:
     match = re.match(pattern, item)
     if match is not None:
-        print(match.group())
+        print(match.group())  # 13809876543
 
 pattern = r'ysj_\w+'
 s = 'ysj_python ysj_spider'
 match = re.search(pattern, s)  # 它只会匹配到第一个符合条件的子串，而不会返回所有匹配的结果
-print(match.group())
+print(match.group())  # ysj_python
 
 match = re.findall(pattern, s)
 print(match)  # 输出：['ysj_python', 'ysj_spider']
@@ -30,4 +30,4 @@ print(' '.join(match))  # 输出：ysj_python ysj_spider
 pattern = r'\s*@'
 s = '@杨淑娟 @刘梅梅 @郭小川'
 lst = re.split(pattern, s)
-print(lst)
+print(lst)  # ['', '杨淑娟', '刘梅梅', '郭小川']

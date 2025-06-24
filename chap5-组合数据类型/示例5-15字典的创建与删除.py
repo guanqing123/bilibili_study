@@ -41,3 +41,10 @@ print('len:', len(d))  # 2
 # 字典的删除
 del d
 # print(d) # NameError: name 'd' is not defined.
+
+key1 = [10, 20, 30]
+val1 = [100, 200, 300]
+zipo = zip(key1, val1)
+print(zipo)
+for k, v in zipo:
+    print(k, v)

@@ -9,16 +9,16 @@ str.rstrip(chars)            从字符串中去掉右侧 chars 中列出的字�
 """
 s = 'HelloWorld'
 # 字符串的替换
-print(s.replace('o', '你好'))
+print(s.replace('o', '你好'))  # Hell你好W你好rld
 new_s = s.replace('o', '你好', 1)  # 最后一个参数是替换次数，默认是全部替换
-print(new_s)
+print(new_s)  # Hell你好World
 
 # 字符串在指定的宽度范围内居中
-print(s.center(20))
-print(s.center(20, '*'))
+print(s.center(20))                       #      HelloWorld
+print(s.center(20, '*'))  # *****HelloWorld*****
 
 # join
-print('-'.join(['hello', 'world', 'hi']))
+print('-'.join(['hello', 'world', 'hi'])) # hello-world-hi
 
 # 去掉字符串左右的空格
 s = '    Hello    World    '
@@ -28,6 +28,6 @@ print(s.rstrip())  # 去除字符串右侧的空格
 
 # 去掉指定的字符
 s3 = 'dl-Helloworld'
-print(s3.strip('ld'))  # 与顺序无关
-print(s3.lstrip('ld'))
-print(s3.rstrip('dl'))
+print(s3.strip('ld'))  # 与顺序无关 -Hellowor
+print(s3.lstrip('ld')) # -Helloworld
+print(s3.rstrip('dl')) # dl-Hellowor

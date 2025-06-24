@@ -6,7 +6,7 @@
 t = (i for i in range(1, 4))
 print(t)  # 生成器对象 <generator object <genexpr> at 0x107d69600>
 # t=tuple(t)
-# print(t)
+# print(t) #(1, 2, 3)
 # 遍历
 # for item in t:
 #     print(item)

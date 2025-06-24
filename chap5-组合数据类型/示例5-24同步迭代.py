@@ -18,3 +18,5 @@ for f, c in zip(fruits, counts):
             print('4个梨')
         case 'grape', 5:
             print('5串葡萄')
+        case _, _:
+            print('其他水果')

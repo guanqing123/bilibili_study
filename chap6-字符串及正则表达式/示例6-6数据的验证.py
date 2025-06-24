@@ -37,13 +37,11 @@ print('hello你好123'.isalnum())  # True
 print('hello你好一二三'.isalnum())  # True
 print('hello你好ⅢⅢⅢ'.isalnum())  # True
 print('hello你好壹贰叁'.isalpha())  # True
-
 print('-' * 50)
 # 判断字符的大小写
 print('HelloWorld'.islower())  # False
 print('helloworld'.islower())  # True
 print('hello你好'.islower())  # True
-
 print('-' * 50)
 print('HelloWorld'.isupper())  # False
 print('HELLOWORLD'.isupper())  # True

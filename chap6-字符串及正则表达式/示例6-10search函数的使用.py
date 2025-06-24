@@ -9,9 +9,9 @@ s3 = 'I study Python every day'
 
 match2 = re.search(pattern, s2)
 match3 = re.search(pattern, s3)  # None
-print(match)
-print(match2)
-print(match3)
+print(match)  # <re.Match object; span=(14, 18), match='3.11'>
+print(match2)  # <re.Match object; span=(0, 4), match='4.10'>
+print(match3)  # None
 
-print(match.group())
-print(match2.group())
+print(match.group())  # 3.11
+print(match2.group())  # 4.10

@@ -7,13 +7,13 @@ s.clear()       清除集合中所有元素
 s = {10, 20, 30}
 # 向集合中添加元素
 s.add(100)
-print(s)
+print(s)  # {100, 10, 20, 30}
 # 删除元素
 s.remove(20)
-print(s)
+print(s)  # {100, 10, 30}
 # 清空集合中所有元素
 # s.clear()
-# print(s)
+# print(s)  # set()
 
 # 集合的遍历操作
 for item in s:
