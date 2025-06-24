@@ -8,8 +8,14 @@ lst = [
 ]
 
 name = input('请输入你要查询的演员:')
+# for item in lst:
+#     for movie in item:
+#         actors = movie['actors']
+#         if name in actors:
+#             print(name, '出演了', movie)
+
 for item in lst:
-    for movie in item:
-        actors = movie['actors']
-        if name in actors:
-            print(name, '出演了', movie)
+    actors = item['actors']
+    if name in actors:
+        title = item['title']
+        print(name, '出演了', title, '电影')

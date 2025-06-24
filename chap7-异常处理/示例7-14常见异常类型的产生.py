@@ -6,7 +6,6 @@
 # print(lst[4])
 
 #(3)KeyError
-
 # d={'name':'ysj','age':20}
 # print(d['gender'])
 
@@ -17,7 +16,6 @@
 # print('hello)
 
 #(6)ValueError
-
 #print(int('a'))
 
 # (7)AttributeError
@@ -25,7 +23,6 @@
 # print(i.name)
 
 #(8)TypeError
-
 #print('hello'+123)
 
 # (9)IndentationError
