@@ -18,7 +18,8 @@ print(calc(10, 20))
 s = lambda a, b: a + b  # s表示就是一个匿名函数
 print(type(s))  # <class 'function'>
 # 调用匿名函数
-print(s(10, 20))
+print(s(10, 20))  # 30
+print(s(20, 30))  # 50
 print('-' * 30)
 # 列表的正常取值操作
 lst = [10, 20, 30, 40, 50]

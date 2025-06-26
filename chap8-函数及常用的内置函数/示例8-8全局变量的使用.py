@@ -11,8 +11,8 @@ def calc(x, y):
     return a + x + y
 
 
-print(a)
-print(calc(10, 20))
+print(a)  # 100
+print(calc(10, 20))  # 130
 print('-' * 30)
 
 
@@ -22,7 +22,7 @@ def calc2(x, y):
 
 
 print(calc2(10, 20))  # 230
-print(a)  #
+print(a)  # 100
 print('-' * 30)
 
 
@@ -33,4 +33,4 @@ def calc3(x, y):
 
 
 print(calc3(10, 20))  # 330
-print(s)
+print(s)  # 300

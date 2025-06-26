@@ -15,16 +15,16 @@ lst = [54, 56, 77, 4, 567, 34]
 # (1)排序操作
 asc_lst = sorted(lst)  # 升序
 desc_lst = sorted(lst, reverse=True)  # 降序
-print('原列表:', lst, id(lst))
-print('升序:', asc_lst, id(asc_lst))
-print('降序:', desc_lst, id(desc_lst))
+print('原列表:', lst, id(lst))  # [54, 56, 77, 4, 567, 34] 4411467712
+print('升序:', asc_lst, id(asc_lst))  # [4, 34, 54, 56, 77, 567] 4419925248
+print('降序:', desc_lst, id(desc_lst))  # [567, 77, 56, 54, 34, 4] 4419925824
 
 print('*' * 20, 'reversed', '*' * 20)
 # （2）reversed 反向
 new_lst = reversed(lst)
-print(lst, id(lst))
+print(lst, id(lst))  # [54, 56, 77, 4, 567, 34] 4411467712
 print(new_lst, type(new_lst))  # <class 'list_reverseiterator'> 迭代器对象
-print(list(new_lst), id(new_lst))
+print(list(new_lst), id(new_lst))  # [34, 567, 4, 77, 56, 54] 4411570112
 
 print('*' * 20, 'zip', '*' * 20)
 # (3)zip
@@ -32,12 +32,14 @@ x = ['a', 'b', 'c', 'd']
 y = [10, 20, 30, 40, 50]
 zipobj = zip(x, y)
 print(type(zipobj))  # <class 'zip'>
+# [('a', 10), ('b', 20), ('c', 30), ('d', 40)] {'a': 10, 'b': 20, 'c': 30, 'd': 40} (('a', 10), ('b', 20), ('c', 30), ('d', 40))
 print(list(zip(x, y)), dict(zip(x, y)), tuple(zip(x, y)))
 
 print('*' * 20, 'enumerate', '*' * 20)
 # (4)enumerate
 enum = enumerate(y, start=1)
 print(type(enum))  # <class 'enumerate'>
+# ((1, 10), (2, 20), (3, 30), (4, 40), (5, 50)) [(1, 10), (2, 20), (3, 30), (4, 40), (5, 50)] {2: 10, 3: 20, 4: 30, 5: 40, 6: 50}
 print(tuple(enum), list(enumerate(y, start=1)), dict(enumerate(y, start=2)))
 
 print('*' * 20, 'all', '*' * 20)
@@ -53,8 +55,8 @@ print(any(lst2))  # True
 print('*' * 20, 'next', '*' * 20)
 # (7)
 print(next(zipobj))  # ('a', 10)
-print(next(zipobj))
-print(next(zipobj))
+print(next(zipobj))  # ('b', 20)
+print(next(zipobj))  # ('c', 30)
 
 print('*' * 20, 'filter', '*' * 20)
 
@@ -75,4 +77,4 @@ def upper(x):
 
 new_lst2 = ['hello', 'world', 'python']
 obj2 = map(upper, new_lst2)
-print(list(obj2))
+print(type(obj2), list(obj2))  # <class 'map'> ['HELLO', 'WORLD', 'PYTHON']

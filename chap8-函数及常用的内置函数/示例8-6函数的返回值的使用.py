@@ -12,8 +12,8 @@ def calc(a, b):
     print(a + b)
 
 
-calc(10, 20)
-print(calc(1, 2))  # None
+calc(10, 20)  # 30
+print(calc(1, 2))  # 3 None
 
 
 def calc2(a, b):
@@ -44,11 +44,11 @@ def get_sum(num):
 
 
 result = get_sum(10)
-print(type(result))
-print(result)
+print(type(result))  # <class 'tuple'>
+print(result)  # (25, 30, 55)
 
 # 解包赋值
 a, b, c = get_sum(10)  # 返回3个值，元组类型
-print(a)
-print(b)
-print(c)
+print(a)  # 25
+print(b)  # 30
+print(c)  # 55
