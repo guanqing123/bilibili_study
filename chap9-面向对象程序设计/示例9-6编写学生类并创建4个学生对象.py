@@ -17,13 +17,14 @@ stu2 = Student('b', 2)
 stu3 = Student('c', 3)
 stu4 = Student('d', 4)
 
-print(type(stu1))
-print(type(stu2))
-print(type(stu3))
-print(type(stu4))
+print(type(stu1), id(stu1))  # <class '__main__.Student'> 4425520944
+print(type(stu2), id(stu2))  # <class '__main__.Student'> 4423737344
+print(type(stu3), id(stu3))  # <class '__main__.Student'> 4425521040
+print(type(stu4), id(stu4))  # <class '__main__.Student'> 4425521088
 
 Student.school = '派森教育'  # 给类的属性赋值
-
+print(stu1.school, stu2.school, stu3.school, stu4.school)  # 派森教育
+print(Student.school)  # 派森教育
 # 将学生对象存储到列表中
 lst = [stu1, stu2, stu3, stu4]  # 列表中的元素是Student类型的对象
 for item in lst:  # item是列表中的元素,是Student类型的对象

@@ -38,17 +38,17 @@ class Student:
 # 创建类的对象
 stu = Student('ysj', 28)  # 为什么传了两个参数,因为__init__方法中,有两个行参,self是自带的参数,无需手动传入
 # 实例属性,使用对象名进行打点调用的
-print(stu.name, stu.age)
+print(stu.name, stu.age)  # ysj 28
 # 类属性,直接使用类名打点调用
-print(Student.school, stu.school)
+print(Student.school, stu.school)  # 北京XXX教育 北京XXX教育
 
 # 实例方法,使用对象名进行打点调用
-stu.show()
+stu.show()  # 我叫:ysj,今年:28岁了
 
 # 类方法,@classmethod进行修饰的方法,直接使用类名打点调用
-Student.cm()
-stu.cm()
+Student.cm()  # 这是一个类方法,不能调用实例属性,也不能调用实例方法
+stu.cm()  # 这是一个类方法,不能调用实例属性,也不能调用实例方法
 
 # 静态方法,@staticmethod进行修饰的方法,直接使用类名打点调用
-Student.sum()
-stu.sum()
+Student.sum()  # 这是一个静态方法,不能调用实例属性,也不能调用实例方法
+stu.sum()  # 这是一个静态方法,不能调用实例属性,也不能调用实例方法

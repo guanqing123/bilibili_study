@@ -32,7 +32,7 @@ class Student:
 # 创建一个学生类的对象
 stu = Student('gq', 34, '男')
 # 类的外部
-print(stu._name)
+print(stu._name) # gq
 # print(stu.__age) # AttributeError: 'Student' object has no attribute '__age'. Did you mean: '_name'?
 
 # 调用受保护的实例方法
@@ -41,7 +41,10 @@ stu._fun1()  # 子类及本身可以访问
 # stu.__fun2()  # AttributeError: 'Student' object has no attribute '__fun2'. Did you mean: '_fun1'?
 
 # 私有的实例属性和方法是真的不能访问吗?
-print(stu._Student__age)  # 为什么可以这样访问呢？
-stu._Student__fun2()
+print(stu._Student__age)  # 为什么可以这样访问呢？34
+stu._Student__fun2() # 子类及本身可以访问
 
+'''
+['_Student__age', '_Student__fun2', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_fun1', '_name', 'gender', 'show']
+'''
 print(dir(stu))

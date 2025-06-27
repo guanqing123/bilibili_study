@@ -15,12 +15,12 @@ class Student:
 # 创建两个Student类型的对象
 gq = Student('gq', 35)
 cl = Student('cl', 34)
-print(gq.name, gq.age)
-print(cl.name, cl.age)
+print(gq.name, gq.age)  # gq 35
+print(cl.name, cl.age)  # cl 34
 
 # 为gq动态绑定一个属性
 gq.gender = '男'
-print(gq.name, gq.age, gq.gender)
+print(gq.name, gq.age, gq.gender)  # gq 35 男
 
 
 # print(cl.gender)  # AttributeError: 'Student' object has no attribute 'gender'
@@ -32,4 +32,4 @@ def introduce():
 gq.fun = introduce  # 函数的赋值
 # fun就是gq对象的方法
 # 调用
-gq.fun()
+gq.fun() # 我是一个普通的函数,我被动态绑定了gq对象的方法
