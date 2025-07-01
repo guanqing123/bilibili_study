@@ -41,9 +41,9 @@ class Doctor(Person):
 
 # 创建第一个子类对象
 stu = Student('陈梅梅', 20, '1001')
+# 大家好,我叫:陈梅梅,我今年:20岁
+# 我来自XXX大学,我的学号是:1001
 stu.show()
 
-print('-' * 40)
-
 doctor = Doctor('张一一', 32, '外科')
-doctor.show()
+doctor.show()  # 大家好,我叫:张一一,我今年32,我的工作科室是:外科

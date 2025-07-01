@@ -33,6 +33,7 @@ cat = Cat()
 dog = Dog()
 
 # 调用fun函数
-fun(per)  # Python中的多态,不关心对象的数据类型,只关心对象是否具有同名方法
-fun(cat)
-fun(dog)
+# Python中的多态,不关心对象的数据类型,只关心对象是否具有同名方法
+fun(per)  # 人,吃五谷杂粮
+fun(cat)  # 猫,喜欢吃鱼
+fun(dog)  # 狗,喜欢啃骨头

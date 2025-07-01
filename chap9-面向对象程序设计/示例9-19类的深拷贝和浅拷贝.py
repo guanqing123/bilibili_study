@@ -27,7 +27,9 @@ disk = Disk()  # 创建了一个硬盘对象
 com = Computer(cpu, disk)
 # 变量（对象）的赋值
 com1 = com
+# <__main__.Computer object at 0x1070d57c0> 子对象的内存地址 <__main__.CPU object at 0x1070d5640> <__main__.Disk object at 0x1070d5760>
 print(com, '子对象的内存地址', com.cpu, com.disk)
+# <__main__.Computer object at 0x1070d57c0> 子对象的内存地址 <__main__.CPU object at 0x1070d5640> <__main__.Disk object at 0x1070d5760>
 print(com1, '子对象的内存地址', com1.cpu, com1.disk)
 print()
 
@@ -36,12 +38,16 @@ import copy
 
 com2 = copy.copy(com)  # com2是新产生的对象, com2的子对象,cpu,disk不变
 print('-' * 40)
+# <__main__.Computer object at 0x1070d57c0> 子对象的内存地址 <__main__.CPU object at 0x1070d5640> <__main__.Disk object at 0x1070d5760>
 print(com, '子对象的内存地址', com.cpu, com.disk)
+# <__main__.Computer object at 0x1078972f0> 子对象的内存地址 <__main__.CPU object at 0x1070d5640> <__main__.Disk object at 0x1070d5760>
 print(com2, '子对象的内存地址', com2.cpu, com2.disk)
 
 com3 = copy.deepcopy(com)  # com3是新产生的对象, com3的子对象,cpu,disk也变了
 print('-' * 40)
+# <__main__.Computer object at 0x1070d57c0> 子对象的内存地址 <__main__.CPU object at 0x1070d5640> <__main__.Disk object at 0x1070d5760>
 print(com, '子对象的内存地址', com.cpu, com.disk)
+# <__main__.Computer object at 0x107897020> 子对象的内存地址 <__main__.CPU object at 0x107897bc0> <__main__.Disk object at 0x107897c80>
 print(com3, '子对象的内存地址', com3.cpu, com3.disk)
 
 

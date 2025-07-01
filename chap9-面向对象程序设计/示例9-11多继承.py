@@ -23,5 +23,5 @@ class Son(FatherA, FatherB):
 
 
 son = Son('陈梅梅', 20, '女')  # 调用Son类中的__init__执行
-son.showA()
-son.showB()
+son.showA()  # 父类A中的方法
+son.showB()  # 父类B中的方法

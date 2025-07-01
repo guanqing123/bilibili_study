@@ -20,7 +20,7 @@ class Student:
 
 stu = Student('官青', '男')
 print(stu.name, '的性别是:', stu.gender)  # stu.gender 就会去执行stu.gender()
-# 尝试属性值
+# 尝试修改属性值
 # stu.gender='女' #AttributeError: property 'gender' of 'Student' object has no setter
 
 stu.gender = '其它'
