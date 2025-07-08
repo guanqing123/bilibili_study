@@ -5,7 +5,7 @@ def write_fun():
 
 def read_fun():
     with open('aa.txt', 'r', encoding='utf-8') as file:
-        print(file.read())
+        print(file.read())  # 2022北京冬奥会欢迎你
 
 
 # 第三个函数
@@ -20,4 +20,3 @@ if __name__ == '__main__':
     read_fun()
     # 文件复制
     copy('./aa.txt', './dd.txt')
-

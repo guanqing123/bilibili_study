@@ -1,7 +1,9 @@
 import os
 
+# /Users/guanqing/python/bilibili_study/chap11-文件及IO操作
 print('当前的工作路径：', os.getcwd())
 lst = os.listdir()
+#  ['with.txt', '复习文件的复制.py', '示例11-5with语句.py', ...]
 print('当前路径下的所有目录及文件：', lst)
 print('指定路径下所有目录及文件：', os.listdir('/Users/guanqing'))
 # 创建目录
@@ -15,8 +17,8 @@ print('指定路径下所有目录及文件：', os.listdir('/Users/guanqing'))
 os.chdir('/Users/guanqing/python/bilibili_study')
 print('当前的工作路径：', os.getcwd())  # 再写代码,工作路径就是：/Users/guanqing/python/bilibili_study
 
-# 遍历目录树,相当于递归
-for dirs, dirlst, filelst in os.walk('/Users/guanqing/python/bilibili_study/chap11'):
+# 遍历目录树,相当于递归 如果执行上面os.chdir,那么 os.walk('chap11-文件及IO操作')
+for dirs, dirlst, filelst in os.walk('../chap11-文件及IO操作'):
     print(dirs)
     print(dirlst)
     print(filelst)

@@ -31,7 +31,7 @@ def my_read_table():
         result = []
         lst = file.readlines()
         for item in lst:  # item是字符串类型
-            tp = item[:len(item) - 1].split(',')  # 字符串切片,把\n去掉
+            tp = item[:len(item)-1].split(',')  # 字符串切片,把\n去掉
             result.append(tp)
     print(result)
 
@@ -39,5 +39,5 @@ def my_read_table():
 if __name__ == '__main__':
     # my_write()
     # my_read()
-    # my_write_table()
+    my_write_table()
     my_read_table()

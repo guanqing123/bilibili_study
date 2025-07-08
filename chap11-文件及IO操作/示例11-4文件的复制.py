@@ -26,5 +26,5 @@ def copy(src, new_path):
 if __name__ == '__main__':
     # copy('d.txt', 'e.txt')
     # ..表示的是上级目录,相当于windows后退, .代表的是当前目录
-    copy('../chap10/google.jpg', 'google-copy.jpg')
+    copy('../chap10-模块及常用的第三方模块/google.jpg', 'google-copy.jpg')
     print('文件复制完毕。。。')

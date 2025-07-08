@@ -1,0 +1,5 @@
+ins = open('with.txt', 'r', encoding='utf-8')
+out = open('with.bak.txt', 'w', encoding='utf-8')
+out.write(ins.read())
+out.close()
+ins.close()
