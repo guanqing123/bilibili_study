@@ -3,6 +3,7 @@ from PIL import Image
 
 # 加载图片
 im = Image.open('google.jpg')
+# <class 'PIL.JpegImagePlugin.JpegImageFile'> <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=1024x576 at 0x1078988C0>
 # print(type(im), im)
 # 提取RGB图像的颜色通道,返回结果是图像的副本
 r, g, b = im.split()

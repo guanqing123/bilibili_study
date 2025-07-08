@@ -13,4 +13,5 @@ c = (
     .set_series_opts(label_opts=opts.LabelOpts(formatter="{b}: {c}"))
     .render("phone.html")
 )
+# [['可乐', 36], ['雪碧', 145], ['橙汁', 106], ['绿茶', 38], ['奶茶', 119], ['百威', 126], ['青岛', 114]]
 # print([list(z) for z in zip(Faker.choose(), Faker.values())])

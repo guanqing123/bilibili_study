@@ -3,7 +3,8 @@ import matplotlib.pyplot as plt  # pip install matplotlib
 
 # 读取图片
 n1 = plt.imread('google.jpg')
-print(type(n1), n1)  # 数组, 三维数组, 最高纬度表示的是图像的高,次高纬度表示的是图像的宽,最低纬度[R,G,B]颜色
+# 数组, 三维数组, 最高纬度表示的是图像的高,次高纬度表示的是图像的宽,最低纬度[R,G,B]颜色
+print(type(n1), n1)  # <class 'numpy.ndarray'>
 plt.imshow(n1)
 
 # 编写一个灰度的公式

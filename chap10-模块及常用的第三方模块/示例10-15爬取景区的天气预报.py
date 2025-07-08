@@ -12,10 +12,10 @@ city = re.findall('<span class="name">([\u4e00-\u9fa5]*)</span>', resp.text)
 weather = re.findall('<span class="weather">([\u4e00-\u9fa5]*)</span>', resp.text)
 wd = re.findall('<span class="wd">(.*)</span>', resp.text)
 zs = re.findall('<span class="zs">([\u4e00-\u9fa5]*)</span>', resp.text)
-# print(city)
-# print(weather)
-# print(wd)
-# print(zs)
+print(type(city), city)  # <class 'list'> ['景区', '三亚', '九寨沟', '大理', '张家界', '桂林', '青岛']
+print(weather)  # ['天气', '多云', '阴转多云', '小雨转阴', '多云', '多云转阵雨', '多云']
+print(wd)  # ['气温', '33/27℃', '29/14℃', '21/17℃', '37/25℃', '37/27℃', '30/26℃']
+print(zs)  # ['旅游指数', '较适宜', '适宜', '适宜', '较不宜', '较不宜', '适宜']
 
 print('-' * 40)
 lst = []

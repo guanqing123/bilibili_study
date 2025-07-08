@@ -2,7 +2,7 @@ from my_info import *
 from introduce import *
 
 # 导入模块中具有同名的变量和函数,后导入的会将之前导入的进行覆盖
-info()
+info()  # 姓名:ysj,年龄:20
 
 print('-' * 40)
 
@@ -11,5 +11,5 @@ import my_info
 import introduce
 
 # 使用模块中的函数或变量时,模块名打点调用
-my_info.info()
-introduce.info()
+my_info.info()  # 大家好,我叫娟子姐
+introduce.info()  # 姓名:ysj,年龄:20

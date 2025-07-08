@@ -1,11 +1,15 @@
 import pandas as pd
 import matplotlib.pylab as plt
 
+# import matplotlib.font_manager as fm
+# lst = [f.name for f in fm.fontManager.ttflist]
+# print(lst)
+
 # 读取Excel文件
 df = pd.read_excel('JD手机销售数据.xlsx')
-# print(df)
+print(df)
 # 解决中文乱码
-plt.rcParams['font.sans-serif'] = 'STHeiti'
+plt.rcParams['font.sans-serif'] = ['Songti SC']
 # 设置画布的大小
 plt.figure(figsize=(10, 6))
 labels = df['商品名称']
