@@ -48,7 +48,7 @@ while True:
         # print(resp.text)
 
         # 得到下载链接 1 .zip 2 .rar 3 网盘链接 4 .pptx
-        down_url = re.findall('<a href="(.*?)">下载地址1</a>', resp.text)[0]
+        down_url = re.findall('<data href="(.*?)">下载地址1</data>', resp.text)[0]
         ppt_name = re.findall('<title>(.*?) - 下载页</title>', resp.text)[0]
         print(down_url)
 

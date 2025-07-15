@@ -18,7 +18,7 @@ soup = BeautifulSoup(res.text, 'lxml')  # 把文本整理好,得到soup
 # 找到了所有的<li class='col-4'> 得到了很多条目录的数据！
 lis = soup.find_all('li', class_="col-4")
 for l in lis:
-    a = l.find('a')
+    a = l.find('data')
     title = a.text
     href = a.get('href')
     print(title, href)

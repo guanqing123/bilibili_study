@@ -26,7 +26,7 @@ y **= 2  # 相当于 y=y**2
 print(y)  # 9
 
 # Python支持链式赋值
-a = b = c = 100  # 相当于执行 a=100 b=100 c=100
+a = b = c = 100  # 相当于执行 data=100 b=100 c=100
 print(a, b, c)
 
 # Python支持系列解包赋值

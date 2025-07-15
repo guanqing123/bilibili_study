@@ -16,7 +16,7 @@
 # print('hello)
 
 #(6)ValueError
-#print(int('a'))
+#print(int('data'))
 
 # (7)AttributeError
 # i=10

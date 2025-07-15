@@ -5,7 +5,7 @@
 # from win32con import *  #windows控制接口
 # from time import sleep  #延时!
 #
-# qq_wnd = FindWindow('TXGuiFoundation', 'QQ') #晚上好 Have a nice day!
+# qq_wnd = FindWindow('TXGuiFoundation', 'QQ') #晚上好 Have data nice day!
 #
 # while True
 #     SetForegroundWindow(qq_wnd)

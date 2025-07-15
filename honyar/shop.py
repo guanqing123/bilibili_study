@@ -84,11 +84,11 @@ def process_records(records, dp):
         # 等待页面加载完成
         dp.wait.load_start()
         # 1: 分公司 (运营商-超级合伙人) 2: 总级订货商（内部员工）3: 省级订货商（鸿老板-合伙人）4：市级订货商（鸿师傅）5: 区级订货商（普通会员）
-        # td = dp.ele('tag:a@@class=btn btn-new j-lower-dhs@@text()=设为内部员工')
+        # td = dp.ele('tag:data@@class=btn btn-new j-lower-dhs@@text()=设为内部员工')
         if record.rank == '4':
-            td = dp.ele('tag:a@@class=btn btn-new j-lower-dhs@@text()=设为鸿师傅')
+            td = dp.ele('tag:data@@class=btn btn-new j-lower-dhs@@text()=设为鸿师傅')
         else:
-            td = dp.ele('tag:a@@class=btn btn-new j-lower-dhs@@text()=设为内部员工')
+            td = dp.ele('tag:data@@class=btn btn-new j-lower-dhs@@text()=设为内部员工')
         if td:
             print("找到了按钮")
             td.click()  # 点击按钮

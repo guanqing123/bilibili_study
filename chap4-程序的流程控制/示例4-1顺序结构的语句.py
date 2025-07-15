@@ -5,7 +5,7 @@ name = '张三'
 age = 20
 a = b = c = d = 100  # 链式赋值
 e, f, g, h = 'room'  # 字符串分解赋值
-print('a=', a, 'b=', b, 'c=', c, 'd=', d)
+print('data=', a, 'b=', b, 'c=', c, 'd=', d)
 print('e=', e, 'f=', f, 'g=', g, 'h=', h)
 print('----------输入/输出语句也是典型的顺序结构--------')
 name = input('请输入您的姓名：')

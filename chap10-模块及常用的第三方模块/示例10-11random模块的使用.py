@@ -14,7 +14,7 @@ print('-' * 40)
 for i in range(10):  # [m,n)步长为k,m->start,n->stop,k->step
     print(random.randrange(1, 10, 3))  # 12行代码执行了10次
 
-print(random.uniform(1, 100))  # [a,b]随机小数 81.25126013057475
+print(random.uniform(1, 100))  # [data,b]随机小数 81.25126013057475
 
 lst = [i for i in range(1, 11)]
 print(random.choice(lst))  # lst是列表,称为序列 随机返回一个元素

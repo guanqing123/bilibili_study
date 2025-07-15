@@ -26,7 +26,7 @@ def merge_avi_mp3(video_path, audio_path, output_path):
     # 构建 ffmpeg 命令
     command = [
         'ffmpeg', '-i', video_path, '-i', audio_path,
-        '-c:v', 'copy', '-c:a', 'aac',  # 保留原视频编码，使用 AAC 编码音频
+        '-c:v', 'copy', '-c:data', 'aac',  # 保留原视频编码，使用 AAC 编码音频
         '-strict', 'experimental', output_path
     ]
 

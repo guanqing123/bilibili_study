@@ -52,14 +52,14 @@ print(com3, '子对象的内存地址', com3.cpu, com3.disk)
 
 
 def test(a, b):
-    print('a=', a, 'b=', b)
+    print('data=', a, 'b=', b)
 
 
 def test(a, b, c='c'):
     if c == 'c':
         test(a, b)
     else:
-        print(f'a={a},b={b},c={c}')
+        print(f'data={a},b={b},c={c}')
 
 
 test('111', '222')

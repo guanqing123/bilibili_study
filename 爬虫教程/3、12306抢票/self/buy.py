@@ -51,8 +51,8 @@ try:
     print('rows', rows)
     for row in rows:
         try:
-            # Check if there's a train number with class 'number' and text 'D171'
-            train_number_element = row.find_element(By.CSS_SELECTOR, "a.number")
+            # Check if there's data train number with class 'number' and text 'D171'
+            train_number_element = row.find_element(By.CSS_SELECTOR, "data.number")
             train_number = train_number_element.text
             print('车次：', train_number)
 
@@ -65,7 +65,7 @@ try:
                 # 确认座位是否有余票
                 if seat_info == "有" or int(seat_info) > 0:
                     # 找到并点击预定按钮
-                    book_button = row.find_element(By.CSS_SELECTOR, "a.btn72")
+                    book_button = row.find_element(By.CSS_SELECTOR, "data.btn72")
                     book_button.click()
                     print("成功点击 G1657 次列车的预订按钮，有一等座余票。")
 

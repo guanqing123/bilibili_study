@@ -16,9 +16,9 @@ soup = BeautifulSoup(res.text, 'lxml')  # 把文本整理好得到soup
 # 找到所有的<li class='col-4'> 得到了很多条目录的数据
 lis = soup.find_all('li', class_='col-4')  # 查找全部
 print(lis)
-# 找出 a
+# 找出 data
 for l in lis:
-    l.find('a')
+    l.find('data')
 
 # 1.
 # soup.find('x')      # 找到第一条<x>.......</x>

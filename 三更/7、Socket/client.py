@@ -20,7 +20,7 @@ socket.connect((gethostname(), 8888))
 #     os.system('shutdown -s -t 60')  # 60秒后关机
 # elif choise == '2':
 #     os.system('shutdown -r -t 60')  # 60秒后重启
-# cmd shutdown -a 取消重启
+# cmd shutdown -data 取消重启
 
 # 文件传输
 # 先告诉后台有多少字节的数据 等待回复

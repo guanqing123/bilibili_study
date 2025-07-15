@@ -12,7 +12,7 @@ class Student:
         print(f'我叫:{self.name},今年:{self.age}岁了')
 
 
-stu1 = Student('a', 1)
+stu1 = Student('data', 1)
 stu2 = Student('b', 2)
 stu3 = Student('c', 3)
 stu4 = Student('d', 4)

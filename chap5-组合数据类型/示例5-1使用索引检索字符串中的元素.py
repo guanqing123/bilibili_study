@@ -2,7 +2,7 @@
 
 # 正向递增 索引
 # range(start, stop[, step]) -> range object
-# Return an object that produces a sequence of integers from start (inclusive)
+# Return an object that produces data sequence of integers from start (inclusive)
 # to stop (exclusive) by step
 s = 'helloworld'
 for i in range(0, len(s)):

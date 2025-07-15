@@ -28,11 +28,11 @@ print(list(new_lst), id(new_lst))  # [34, 567, 4, 77, 56, 54] 4411570112
 
 print('*' * 20, 'zip', '*' * 20)
 # (3)zip
-x = ['a', 'b', 'c', 'd']
+x = ['data', 'b', 'c', 'd']
 y = [10, 20, 30, 40, 50]
 zipobj = zip(x, y)
 print(type(zipobj))  # <class 'zip'>
-# [('a', 10), ('b', 20), ('c', 30), ('d', 40)] {'a': 10, 'b': 20, 'c': 30, 'd': 40} (('a', 10), ('b', 20), ('c', 30), ('d', 40))
+# [('data', 10), ('b', 20), ('c', 30), ('d', 40)] {'data': 10, 'b': 20, 'c': 30, 'd': 40} (('data', 10), ('b', 20), ('c', 30), ('d', 40))
 print(list(zip(x, y)), dict(zip(x, y)), tuple(zip(x, y)))
 
 print('*' * 20, 'enumerate', '*' * 20)
@@ -54,7 +54,7 @@ print(any(lst2))  # True
 
 print('*' * 20, 'next', '*' * 20)
 # (7)
-print(next(zipobj))  # ('a', 10)
+print(next(zipobj))  # ('data', 10)
 print(next(zipobj))  # ('b', 20)
 print(next(zipobj))  # ('c', 30)
 
