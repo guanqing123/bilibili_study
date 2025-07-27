@@ -80,6 +80,10 @@ html = etree.HTML(page)
 # 三、面向对象
 class DouBan:
     base_url = 'https://movie.douban.com/top250?start={}&filter='
+    headers = {
+        'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) '
+                      'Chrome/131.0.0.0 Safari/537.36'
+    }
 
     def __init__(self):
         # 定义一个属性用来保存所有的url地址
@@ -90,10 +94,7 @@ class DouBan:
             self.url_list.append(url)
 
     def get_page_data(self, url):
-        headers = {
-            'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
-        }
-        resp = requests.get(url, headers=headers)
+        resp = requests.get(url, headers=self.headers)
         html = etree.HTML(resp.content.decode())
         data_list = html.xpath("//ol/li")
 
@@ -105,6 +106,7 @@ class DouBan:
 
     def run(self):
         for url in self.url_list:
+            print("================开始抓取页面:", url)
             self.get_page_data(url)
 
 

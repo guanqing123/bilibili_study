@@ -1,0 +1,16 @@
+{
+  "name": "张三",
+  "age": 18,
+  "skill": [
+    "java",
+    "python",
+    "c++"
+  ],
+  "isDelete": true,
+  "isActive": false,
+  "addr": {
+    "city": "上海",
+    "street": "上海路"
+  },
+  "phone": null
+}
