@@ -1,4 +1,7 @@
 import json
+import time
+
+import requests
 
 
 #  将文件中json数据读取转换为python对象方式一
@@ -56,3 +59,43 @@ def json_dump():
     }
     # 将python对象写入文件
     json.dump(data, open('dump.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=4)
+
+
+'''
+    安装jsonpath: pip3 install jsonpath
+'''
+
+from jsonpath import jsonpath
+
+
+def use_jsonpath():
+    json_data = json.load(open('data.json', 'r', encoding='utf-8'))
+    # 使用jsonpath提取数据
+    title = jsonpath(json_data, '$.title')
+    name = jsonpath(json_data, '$..name')
+    photo = jsonpath(json_data, '$.author.photo')
+    time = jsonpath(json_data, '$.time')
+
+    print(title, name, photo, time)
+
+
+# 小饭桌
+def jsonpath_xfz(page):
+    url = "https://www.xfz.cn/api/website/articles/?p={}&n=20&type=%E7%83%AD%E7%82%B9".format(page)
+
+    resp = requests.get(url)
+    result = resp.json()
+
+    # 遍历所有的咨询信息,提取数据
+    for item in result['data']:
+        title = jsonpath(item, '$.title')[0]
+        name = jsonpath(item, '$..name')[0]
+        photo = jsonpath(item, '$.author.photo')[0]
+        stime = jsonpath(item, '$.time')[0]
+        print(title, name, photo, stime)
+    time.sleep(1)
+
+
+if __name__ == '__main__':
+    for i in range(1, 5):
+        jsonpath_xfz(i)
