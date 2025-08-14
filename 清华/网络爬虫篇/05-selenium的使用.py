@@ -3,6 +3,7 @@ import time
 
 import pandas as pd
 import requests
+from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -45,7 +46,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 
 
-# selenium 加载数据
+# selenium 获取页面
 def selenium_load_data():
     # 1、selenium打开浏览器
     # s = Service('D\chromedriver.exe')
@@ -115,6 +116,7 @@ def selenium_auto_login():
     driver.quit()
 
 
+# selenium + xpath 收集数据
 def selenium_fetch_data():
     s = Service('/usr/local/bin/chromedriver')
     options = Options()
@@ -135,6 +137,7 @@ def selenium_fetch_data():
         print(f'标题:{title} \t 发布时间:{pub_time} \t 内容:{content}')
 
 
+#  implicitly_wait 隐式等待
 def selenium_ys_wait():
     s = Service('/usr/local/bin/chromedriver')
     driver = webdriver.Chrome(service=s)
@@ -225,6 +228,7 @@ def selenium_qq_mail_login():
     driver.quit()
 
 
+# selenium location_once_scrolled_into_view 滚动页面
 def selenium_scroll():
     s = Service('/usr/local/bin/chromedriver')
     driver = webdriver.Chrome(service=s)
@@ -297,6 +301,57 @@ def selenium_js_scroll():
     driver.quit()
 
 
+# selenium 模拟鼠标操作
+def selenium_mouse():
+    s = Service('/usr/local/bin/chromedriver')
+    driver = webdriver.Chrome(service=s)
+
+    driver.get('https://www.runoob.com/try/try.php?filename=jqueryui-api-droppable')
+    driver.implicitly_wait(10)
+
+    # 获取iframe元素
+    ele_iframe = driver.find_element(By.XPATH, '//iframe[@id="iframeResult"]')
+    driver.switch_to.frame(ele_iframe)
+
+    # 创建一个鼠标操作对象
+    ac = ActionChains(driver)
+    # 将鼠标移动到某个元素上 (请拖拽我)
+    ac.move_to_element(driver.find_element(By.XPATH, '//div[@id="draggable"]'))
+    # 按下鼠标左键
+    ac.click_and_hold()
+    # 移动到指定元素 (请放置我)
+    ac.move_to_element(driver.find_element(By.XPATH, '//div[@id="droppable"]'))
+    # 释放鼠标
+    ac.release()
+    # 执行动作
+    ac.perform()
+
+    time.sleep(5)
+    driver.quit()
+
+
+def selenium_aqistudy():
+    s = Service('/usr/local/bin/chromedriver')
+
+    opt = webdriver.ChromeOptions()
+    # 添加防检测的参数
+    opt.add_argument('--disable-infobars')
+    opt.add_experimental_option('excludeSwitches', ['enable-automation'])
+    opt.add_experimental_option('useAutomationExtension', False)
+    driver = webdriver.Chrome(service=s, options=opt)
+
+    # 在每次打开页面之前,执行该脚本,去除selenium浏览器生成的相关属性
+    with open('hide.js') as f:
+        driver.execute_cdp_cmd('Page.addScriptToEvaluateOnNewDocument', {"source": f.read()})
+
+    driver.get('https://www.aqistudy.cn/')
+
+    time.sleep(20)
+    driver.quit()
+
+
+
+
 if __name__ == '__main__':
     # requests_load_data()
     # selenium_load_data()
@@ -307,4 +362,6 @@ if __name__ == '__main__':
     # selenium_iframe()
     # selenium_qq_mail_login()
     # selenium_scroll()
-    selenium_js_scroll()
+    # selenium_js_scroll()
+    selenium_mouse()
+    # selenium_aqistudy()
